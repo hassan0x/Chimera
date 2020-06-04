@@ -17,6 +17,6 @@ python http.py
 
 then you will find inside the Normal Directory the normal http headers, and inside the Malicious Directory the malicious http headers, and they both are divided to 90% to the trainning data and 10% to the testing data.
 
-![alt text](https://github.com/hassan0x/Chimera/blob/master/http.jpg?raw=true)
+![alt text](https://github.com/hassan0x/Chimera/blob/master/http.png?raw=true)
 
 ## Training Part
