@@ -23,9 +23,24 @@ then you will find inside the Normal Directory the normal http headers, and insi
 the tool then take the normal and malicious training data and perform the naive bayes theory on them (we implemented the naive bayes theory from the scratch to absulotely fit our trainning model and to increase the success rate).
 
 ```
-python traing.py
+python train.py
 ```
 
 you will find a new file called calc.txt which contains all the calculation of the trainning model (probability of normal http headers, probability of malicious http headers, number of total normal words, number of total malicious words, uniq words, probability of normal class and probality of malicious class), and we will use this file and all these calculations in the testing phase.
 
 ![alt text](https://github.com/hassan0x/Chimera/blob/master/train.png?raw=true)
+
+## Testing Part
+then the tool take the user input file that he want to test against the trainning model, and load the training model from calc.txt and perform the testing and calculations between this two, where the tool predict to which class this test case belong.
+
+```
+python test.py Normal/normal-test10.txt
+```
+![alt text](https://github.com/hassan0x/Chimera/blob/master/test1.png?raw=true)
+
+```
+python test.py Malicious/malicious-test10.txt
+```
+![alt text](https://github.com/hassan0x/Chimera/blob/master/test2.png?raw=true)
+
+as you can see we performing the calculations and predictions on the remaining test data that we divided in the first and we don't know the types of these tests and we don't include it in our training model, so this test data are unknown to us.
