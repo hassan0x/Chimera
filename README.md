@@ -20,3 +20,12 @@ then you will find inside the Normal Directory the normal http headers, and insi
 ![alt text](https://github.com/hassan0x/Chimera/blob/master/http.png?raw=true)
 
 ## Training Part
+the tool then take the normal and malicious training data and perform the naive bayes theory on them (we implemented the naive bayes theory from the scratch to absulotely fit our trainning model and to increase the success rate).
+
+```
+python traing.py
+```
+
+you will find a new file called calc.txt which contains all the calculation of the trainning model (probability of normal http headers, probability of malicious http headers, number of total normal words, number of total malicious words, uniq words, probability of normal class and probality of malicious class), and we will use this file and all these calculations in the testing phase.
+
+![alt text](https://github.com/hassan0x/Chimera/blob/master/train.png?raw=true)
